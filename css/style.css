@@ -1,0 +1,14 @@
+@import "abstracts/variables.css";
+@import "base/base.css";
+@import "base/typography.css";
+@import "base/utilities.css";
+@import "components/navigation.css";
+@import "components/buttons.css";
+@import "components/card.css";
+@import "layout/sections/section-arrivals.css";
+@import "layout/header.css";
+@import "layout/footer.css";
+@import "pages/home.css";
+@import "pages/cart.css";
+@import "pages/plp.css";
+@import "pages/pdp.css";

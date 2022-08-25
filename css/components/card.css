@@ -1,0 +1,47 @@
+.product-card{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.product__img{
+width: 100%;
+height: 85%;
+}
+.product__img img{
+object-fit: cover;
+}
+.product__name{
+    
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    
+}
+.product__description,.product__price{
+ color: var(--color-primary--light);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    
+}
+.like-btn{
+    width: 16px;
+    height: 14px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+    background-position: center;
+    background-size: cover;
+    align-self: flex-end;
+    background-repeat: no-repeat;
+}
+.like-filled{
+background-image: url("../../public/icons/filled.png");
+}
+.like-empty{
+    background-image: url("../../public/icons/empty.png");
+}

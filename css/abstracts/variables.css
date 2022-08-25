@@ -1,0 +1,9 @@
+:root{
+--font-primary:'Montserrat', sans-serif;
+--color-primary:#000000;
+--color-primary--light:##7C7C7C;
+--color-secondary:#FFE9D5;
+--color-secondary--light:#FFF5EB;
+--color--tertiary:white;
+--color--tertiary--dark:#717171;
+}

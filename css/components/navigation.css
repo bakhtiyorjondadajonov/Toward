@@ -1,0 +1,160 @@
+.navigation{
+padding: 4rem 0;
+}
+.list{
+list-style: none;
+display: flex;
+}
+.list__item{
+
+}
+/* ---------------- NAVIGATION PRIMARY ------------- */
+.navigation__primary{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+align-items: center;
+justify-items: center;
+padding: 0 4rem;
+}
+.hamburger{
+    display: none;
+    justify-self: start;
+}
+.nav-search{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0.2rem 0.5rem 0.2rem;
+    border-bottom: solid 1px black;
+    gap: 1rem;
+    justify-self: start;
+   
+ 
+}
+.nav-search__input{
+    font-family: var(--font-primary);
+font-size: 12px;
+font-weight: 400;
+line-height: 15px;
+letter-spacing: 0.16em;
+text-align: left;
+width: 90%;
+text-transform: uppercase;
+border: none;
+outline: none;
+}
+.nav-search__input:focus{
+    /* width: 150%; */
+    outline: none;
+    box-sizing: border-box;
+}
+.nav-search__label{
+
+width: 16px;
+height: 16px;
+}
+.navigation__logo{
+
+}
+.list--navigation__primary{
+gap: 1rem;
+justify-self: end;
+}
+.list__item--avatar{
+
+}
+.list__item--navigation__primary{
+width: 16px;
+height: 16px;
+
+}
+
+/* ---------------------- NAVIGATION SECONDARY -------------------- */
+.navigation__secondary{
+display: flex;
+justify-content: center;
+padding-top: 2.5rem;
+}
+.list--navigation__secondary{
+gap: 1rem;
+
+}
+.list__item--navigation__secondary{
+    font-family: var(--font-primary);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0.16em;
+    text-align: left;
+    text-transform: uppercase;
+    cursor: pointer;    
+}
+/* ------------------- NAVIGATION BREAD CRUMP --------------------- */
+.navigation__breadcrump{
+    margin-top: 2.5rem;
+display: flex;
+justify-content: center;
+background-color: var(--color-secondary);
+padding: 0.5rem;
+width: 100vw;
+overflow: scroll;
+-ms-overflow-style: none;
+
+}
+.navigation__breadcrump::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+.list--breadcrump{
+align-items: center;
+gap: 1rem;
+
+flex-wrap: nowrap;
+}
+@keyframes scrollText {
+    from {
+        transform: translateX(0%);
+   }
+    to {
+        transform: translateX(-50%);
+   }
+}
+.list__item--breadcrump{
+    width: max-content;
+    font-family: var(--font-primary);
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0.09em;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+
+
+
+
+
+
+
+@media (max-width:900px) {
+    .navigation__primary{
+        padding: 0 1.5rem;
+    }
+    .hamburger{
+        display: initial;
+    }
+    .list--breadcrump{
+        animation: scrollText 10s linear infinite;
+    }
+    .list__item--navigation__primary{
+        display: none;
+    }
+    .nav-search{
+        display: none;
+    }
+    .navigation__secondary{
+        display: none;
+    }
+}
