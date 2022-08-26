@@ -31,6 +31,7 @@ carouselFn(arrivalsCarousel, [false, false], false);
 //---------- RENDER PRODUCTS CARD
 const seasonalWrapper = document.querySelector(".swiper-wrapper--seasonal");
 const editionWrapper = document.querySelector(".swiper-wrapper--edition");
+// const favouritesWrapper = document.querySelector(".swiper-wrapper--favourites");
 
 const seasonalData = [
   {

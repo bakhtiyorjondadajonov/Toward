@@ -1,0 +1,48 @@
+.favourites{
+    padding: 5rem;
+    gap: 3rem;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+height: auto;
+}
+.favourites__carousel-container{
+height: 75vh;
+width: 100%;
+}
+.swiper--favourites {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+
+  @media (max-width:600px) {
+    .favourites{
+        padding: 1rem;
+        /* gap: 1rem; */
+    }
+    
+    .favourites__carousel-container{
+        height: max-content;}
+  }

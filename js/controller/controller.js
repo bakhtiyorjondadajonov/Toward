@@ -57,3 +57,23 @@ const swiperParfumes = new Swiper(".swiper__parfumes", {
     prevEl: ".swiper-button-prev",
   },
 });
+const favouritesCarousel = new Swiper(".swiper--favourites", {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  freeMode: true,
+  breakpoints: {
+    0: {
+      slidesPerView: 2,
+    },
+    900: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
