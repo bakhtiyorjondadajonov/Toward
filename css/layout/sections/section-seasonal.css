@@ -1,0 +1,110 @@
+.seasonal{
+display: grid;
+grid-template-columns: 40vw 1fr;
+grid-template-rows: min-content 100vh;
+/* padding: 5rem; */
+gap: 3rem;
+height: 110vh;
+/* width:500px; */
+/* overflow: hidden; */
+}
+
+.seasonal__banner{
+    display: flex;
+    flex-direction: column;
+   /* width: max-content; */
+gap: 2rem;
+grid-column: 1/2;
+align-items: center;
+justify-self: center;
+/* height:80vh; */
+overflow: hidden;
+}
+.seasonal__img{
+width: 110%;
+height: 85%;
+
+}
+.seasonal__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover !important;
+}
+.cta--seasonal{
+   
+    /* align-self: center; */
+/* margin-left: 11rem; */
+align-self: flex-start;
+
+}
+.seasonal__carousel-container{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 55vw;
+    height: 90%;
+/* width: 100%; */
+/* height: 100%; */
+}
+
+.swiper--seasonal {
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper-slide--seasonal {
+    /* height: max-content; */
+    
+    height: calc((100% - 30px) / 2) !important;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    margin: 0 !important;
+  }
+
+@media (max-width:800px) {
+  
+    .seasonal{
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content min-content;
+        height: auto;
+    }
+    .seasonal__banner{
+        grid-column: 1/-1;
+        grid-row: 2/3;
+      
+    }
+    .seasonal__img {
+       height: 100%;
+       width: 95%;
+       
+    }
+    .cta--seasonal{
+     
+        display: none;
+    }
+    .seasonal__carousel-container{
+        margin-top: -5rem;
+        grid-column: 1/-1;
+        grid-row: 3/4;
+        width: 100vw;
+        height: max-content;
+        /* height: auto; */
+    }
+}
+
+
+
+

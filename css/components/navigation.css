@@ -92,14 +92,16 @@ gap: 1rem;
 }
 /* ------------------- NAVIGATION BREAD CRUMP --------------------- */
 .navigation__breadcrump{
+    height: 33px;
     margin-top: 2.5rem;
 display: flex;
 justify-content: center;
 background-color: var(--color-secondary);
 padding: 0.5rem;
-width: 100vw;
+/* width: 100vw; */
 overflow: scroll;
 -ms-overflow-style: none;
+
 
 }
 .navigation__breadcrump::-webkit-scrollbar {

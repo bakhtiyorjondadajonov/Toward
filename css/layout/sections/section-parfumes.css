@@ -1,0 +1,77 @@
+.parfumes{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.parfumes__carousel{
+    width: 100%;
+    height: 80vh;
+    padding: 2rem;
+}
+.swiper-wrapper--parfumes{
+
+}
+
+.swiper__parfumes {
+    width: 100%;
+    height: 100%;
+  }
+.product__img--parfumes{
+    width: 50%;
+    align-self: center;
+}
+  .product__name--parfumes{
+text-transform: uppercase;
+  }
+
+  .swiper-slide {
+  
+    
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .swiper-slide--first{
+    display: flex;
+}
+.swiper-slide--second{
+display: flex;
+gap: 1rem;
+padding: 3rem;
+}
+  /* .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
+
+
+  @media (max-width:800px) {
+    .parfumes{
+        height: auto;
+    }
+    .parfumes__carousel{
+        height: max-content;
+    }
+    .parfumes__banner{
+        height: 100%;
+    }
+    .product-card--perfumes{
+        display: none;
+    }
+  }

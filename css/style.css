@@ -6,6 +6,10 @@
 @import "components/buttons.css";
 @import "components/card.css";
 @import "layout/sections/section-arrivals.css";
+@import "layout/sections/section-collection.css";
+@import "layout/sections/section-seasonal.css";
+@import "layout/sections/section-parfumes.css";
+@import "layout/sections/section-edition.css";
 @import "layout/header.css";
 @import "layout/footer.css";
 @import "pages/home.css";

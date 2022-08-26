@@ -17,3 +17,42 @@
 .paragraph{
 
 }
+
+.sections-text-content{
+    grid-column: 1/-1;
+    grid-row: 1/span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sub-title--sections{
+font-size: 10px;
+font-weight: 500;
+line-height: 17px;
+letter-spacing: 0.205em;
+text-align: left;
+
+}
+.title--sections{
+
+}
+
+@media(max-width:800px){
+    .sub-title--sections{
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 17px;
+        letter-spacing: 0.205em;
+        text-align: center
+        
+    }  
+    .title--sections{
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 35px;
+        letter-spacing: 0em;
+        text-align: center;
+        
+    }
+}
