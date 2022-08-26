@@ -199,14 +199,13 @@
       </div>
       <div class="seasonal__carousel-container">
         <div class="swiper swiper--seasonal mySwiper">
-          <div class="swiper-wrapper"></div>
-          <div class="swiper-pagination"></div>
+          <div class="swiper-wrapper swiper-wrapper--seasonal"></div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
         </div>
       </div>
     </section>
-    <div class="parfumes">
+    <section class="parfumes">
       <div class="sections-text-content">
         <div class="sub-title sub-title--sections">FROM THE EDITOR’S DESK</div>
         <h1 class="title title--sections">Classic Scents by Chanel</h1>
@@ -264,7 +263,34 @@
           <div class="swiper-button-prev"></div>
         </div>
       </div>
-    </div>
+    </section>
+    <section class="seasonal seasonal--edition">
+      <div class="sections-text-content">
+        <div class="sub-title sub-title--sections">seasonal</div>
+        <h1 class="title title--sections">Floral edit</h1>
+      </div>
+      <div class="seasonal__banner seasonal__banner--edition">
+        <picture class="seasonal__img seasonal__img--edition">
+          <source
+            media="(max-width:800px)"
+            srcset="./public/edition-mobile.png"
+          />
+          <img src="./public/edition.png" alt="" />
+        </picture>
+        <a href="#" class="cta cta--seasonal">Shop Now <span>&rarr;</span></a>
+      </div>
+      <div
+        class="seasonal__carousel-container seasonal__carousel-container--edition"
+      >
+        <div class="swiper swiper--seasonal edition-carousel">
+          <div class="swiper-wrapper swiper-wrapper--edition"></div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+    <section class="favourites"></section>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   </body>
 </html>

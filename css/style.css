@@ -10,6 +10,7 @@
 @import "layout/sections/section-seasonal.css";
 @import "layout/sections/section-parfumes.css";
 @import "layout/sections/section-edition.css";
+@import "layout/sections/section-favourites.css";
 @import "layout/header.css";
 @import "layout/footer.css";
 @import "pages/home.css";

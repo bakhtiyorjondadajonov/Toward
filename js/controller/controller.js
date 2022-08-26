@@ -9,10 +9,31 @@ const swiper = new Swiper(".mySwiper", {
     rows: 2,
   },
   spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
+  breakpoints: {
+    0: {
+      grid: {
+        rows: 1,
+      },
+    },
+    800: {
+      grid: {
+        rows: 2,
+      },
+    },
+  },
+});
+const edition = new Swiper(".edition-carousel", {
+  slidesPerView: 2,
+  grid: {
+    rows: 2,
+  },
+  spaceBetween: 30,
+
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
