@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toward | PLP</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100;200;300;400;500;600;700;800&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script type="module" src="./js/controller/controller.js"></script>
+  </head>
+  <body>
+    <nav class="navigation">
+      <div class="navigation__primary">
+        <div class="hamburger">
+          <img src="./public/icons/hamburger.png" alt="hamburger" />
+        </div>
+        <form class="nav-search">
+          <input
+            type="text"
+            placeholder="search"
+            id="nav-search__input"
+            class="nav-search__input"
+          />
+          <button for="nav-search__input" class="btn nav-search__label">
+            <img src="./public/icons/icon-search.svg" alt="search icon" />
+          </button>
+        </form>
+        <div class="navigation__logo">
+          <img src="./public/icons/primary-logo.png" alt="primary-logo" />
+        </div>
+        <ul class="list list--navigation__primary">
+          <li class="list__item list__item--avatar">
+            <img src="./public/icons/icon-avatar.svg" alt="" />
+          </li>
+          <li class="list__item list__item--navigation__primary">
+            <img src="./public/icons/icon-like.svg" alt="" />
+          </li>
+          <li class="list__item list__item--navigation__primary">
+            <img src="./public/icons/icon-cart.svg" alt="" />
+          </li>
+        </ul>
+      </div>
+      <div class="navigation__secondary">
+        <ul class="list list--navigation__secondary">
+          <li class="list__item list__item--navigation__secondary">new</li>
+          <li class="list__item list__item--navigation__secondary">
+            designers
+          </li>
+          <li class="list__item list__item--navigation__secondary">clothes</li>
+          <li class="list__item list__item--navigation__secondary">shoes</li>
+          <li class="list__item list__item--navigation__secondary">
+            accessories
+          </li>
+          <li class="list__item list__item--navigation__secondary">bags</li>
+          <li class="list__item list__item--navigation__secondary">jewlery</li>
+          <li class="list__item list__item--navigation__secondary">beauty</li>
+          <li class="list__item list__item--navigation__secondary">editoral</li>
+          <li class="list__item list__item--navigation__secondary">sale</li>
+        </ul>
+      </div>
+    </nav>
+    <header class="header header--plp">
+      <h1 class="title title--header-plp">Gucci</h1>
+      <div class="header--plp__content">
+        Under the new vision of creative director Alessandro Michele, the House
+        has redefined luxury for the 21st century, further reinforcing its
+        position as one of the world’s most desirable fashion houses.
+      </div>
+    </header>
+    <main>
+      <div class="plp-nav">
+        <ul class="list list--plp-nav">
+          <li class="item item--plp-nav">
+            <div class="plp-nav__icon">
+              <img src="./public/icons/icon-people.png" alt="" />
+            </div>
+            <span>People</span>
+          </li>
+          <li class="item item--plp-nav">
+            <div class="plp-nav__icon">
+              <img src="./public/icons/icon-tree.png" alt="" />
+            </div>
+            <span>Environment</span>
+          </li>
+          <li class="item item--plp-nav">
+            <div class="plp-nav__icon">
+              <img src="./public/icons/icon-animal.png " alt="" />
+            </div>
+            <span>Animal</span>
+          </li>
+        </ul>
+      </div>
+      <div class="config-buttons">
+        <button class="btn btn--filter"><span>&minus;</span>Filter</button>
+        <button class="btn btn--sort"><span>&plus;</span>Sort By</button>
+      </div>
+      <div class="side-bar">
+        <select>
+          <option disabled selected>Nothing</option>
+          <option value="1">Some option</option>
+          <option value="2">Another option</option>
+          <option value="3">A disabled option</option>
+          <option value="4">Potato</option>
+        </select>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__header">
+        <h2 class="footer__header-heading">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </h2>
+      </div>
+      <div class="footer__signup">
+        <h4 class="footer__signup-title">Sign up for toward updates</h4>
+        <p class="footer__signup-text">
+          Receiving our newsletter with access to our latest collections, events
+          and news.
+        </p>
+        <div class="footer__signup-input-container">
+          <input
+            type="email"
+            class="footer__signup-input"
+            placeholder="Email Address"
+          />
+          <img
+            src="./public/icons/icon-arrowR.svg"
+            alt=""
+            class="footer__signup-input-icon"
+          />
+        </div>
+        <div class="footer__signup-icons">
+          <img
+            src="./public/icons/icon-instagram.svg"
+            alt=""
+            class="footer__signup-icon"
+          />
+          <img
+            src="./public/icons/icon-facebook.svg"
+            alt=""
+            class="footer__signup-icon"
+          />
+        </div>
+      </div>
+      <div class="footer__link-group">
+        <ul class="footer__links">
+          <li class="footer__link-item">
+            <h4 class="footer__link-title">Customer care</h4>
+          </li>
+          <li class="footer__link-item">
+            <a href="" class="footer__link p--primary">FAQ</a>
+          </li>
+          <li class="footer__link-item">
+            <a href="" class="footer__link p--primary">Shipping & Returns</a>
+          </li>
+          <li class="footer__link-item">
+            <a href="" class="footer__link p--primary">Contact</a>
+          </li>
+        </ul>
+        <ul class="footer__links">
+          <li class="footer__link-item">
+            <h4 class="footer__link-title">company</h4>
+          </li>
+          <li class="footer__link-item">
+            <a href="" class="footer__link p--primary">About Us</a>
+          </li>
+          <li class="footer__link-item">
+            <a href="" class="footer__link p--primary">Journal</a>
+          </li>
+          <li class="footer__link-item">
+            <a href="" class="footer__link p--primary">Press</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  </body>
+</html>
