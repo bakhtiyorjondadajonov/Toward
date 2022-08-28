@@ -77,3 +77,39 @@ const favouritesCarousel = new Swiper(".swiper--favourites", {
     clickable: true,
   },
 });
+const plpSwiper = new Swiper(".swiper--plp", {
+  slidesPerView: 3,
+  grid: {
+    rows: 2,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 2,
+    },
+    900: {
+      slidesPerView: 3,
+    },
+  },
+
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  },
+});
+const pdpSwiper = new Swiper(".swiper--pdp", {
+  direction: "horizontal",
+
+  breakpoints: {
+    0: {
+      direction: "horizontal",
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    },
+  },
+});

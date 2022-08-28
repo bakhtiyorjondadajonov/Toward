@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toward | PLP</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100;200;300;400;500;600;700;800&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./nice-select2-2.0.0/dist/css/nice-select2.css"
+    />
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script type="module" src="./js/controller/controller.js"></script>
+  </head>
+  <body>
+    <nav class="navigation">
+      <div class="navigation__primary">
+        <div class="hamburger">
+          <img src="./public/icons/hamburger.png" alt="hamburger" />
+        </div>
+        <form class="nav-search">
+          <input
+            type="text"
+            placeholder="search"
+            id="nav-search__input"
+            class="nav-search__input"
+          />
+          <button for="nav-search__input" class="btn nav-search__label">
+            <img src="./public/icons/icon-search.svg" alt="search icon" />
+          </button>
+        </form>
+        <div class="navigation__logo">
+          <img src="./public/icons/primary-logo.png" alt="primary-logo" />
+        </div>
+        <ul class="list list--navigation__primary">
+          <li class="list__item list__item--avatar">
+            <img src="./public/icons/icon-avatar.svg" alt="" />
+          </li>
+          <li class="list__item list__item--navigation__primary">
+            <img src="./public/icons/icon-like.svg" alt="" />
+          </li>
+          <li class="list__item list__item--navigation__primary">
+            <img src="./public/icons/icon-cart.svg" alt="" />
+          </li>
+        </ul>
+      </div>
+      <div class="navigation__secondary">
+        <ul class="list list--navigation__secondary">
+          <li class="list__item list__item--navigation__secondary">new</li>
+          <li class="list__item list__item--navigation__secondary">
+            designers
+          </li>
+          <li class="list__item list__item--navigation__secondary">clothes</li>
+          <li class="list__item list__item--navigation__secondary">shoes</li>
+          <li class="list__item list__item--navigation__secondary">
+            accessories
+          </li>
+          <li class="list__item list__item--navigation__secondary">bags</li>
+          <li class="list__item list__item--navigation__secondary">jewlery</li>
+          <li class="list__item list__item--navigation__secondary">beauty</li>
+          <li class="list__item list__item--navigation__secondary">editoral</li>
+          <li class="list__item list__item--navigation__secondary">sale</li>
+        </ul>
+      </div>
+    </nav>
+    <header class="header-pdp">
+      <div class="header-pdp__gallery">
+        <div class="swiper swiper--pdp">
+          <div class="swiper-wrapper swiper-wrapper--pdp">
+            <div class="swiper-slide swiper-slide--pdp">
+              <div class="gallery__img-box">
+                <img src="./public/product-pdp-1.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--pdp">
+              <div class="gallery__img-box">
+                <img src="./public/product-pdp-1.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--pdp">
+              <div class="gallery__img-box">
+                <img src="./public/product-2.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <form class="header-pdp__product-info">
+        <div class="product__name product__name--pdp">Alexander Wang</div>
+        <div class="product__design">
+          <span>Zipper Mini dress</span
+          ><span><div class="like-btn like-empty"></div> </span>
+        </div>
+        <div class="product__price product__price--pdp">$879.00</div>
+
+        <div class="product__discount">
+          <span> Pay as low as $49/mo <a href="#">Learn More</a> </span>
+          <span
+            ><input type="checkbox" id="pdp-checkbox" />
+            <label class="pdp-checkbox-label" for="pdp-checkbox  "
+              >TW-29382-2</label
+            ></span
+          >
+        </div>
+        <select class="wide select-menu" id="size">
+          <option disabled selected>Size</option>
+          <option value="1">XL</option>
+          <option value="2">L</option>
+          <option value="3">2xl</option>
+          <option value="4">m</option>
+        </select>
+        <a href="#" class="select__link">Size guide</a>
+        <div class="color-swatch-box">
+          <span>Color:White</span>
+          <div class="product__swatches-box product__swatches-box--pdp">
+            <div class="checkbox-label checkbox-label--checked">
+              <div class="checkbox checkbox--white">&nbsp;</div>
+            </div>
+            <div class="checkbox-label">
+              <div class="checkbox checkbox--black">&nbsp;</div>
+            </div>
+            <div class="checkbox-label">
+              <div class="checkbox checkbox--red">&nbsp;</div>
+            </div>
+          </div>
+</div>
+        </div>
+        <button class="btn btn--bag">Add to bag</button>
+      </form>
+    </header>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./nice-select2-2.0.0/dist/js/nice-select2.js"></script>
+  </body>
+</html>

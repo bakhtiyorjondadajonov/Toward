@@ -18,6 +18,10 @@
       rel="stylesheet"
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="./nice-select2-2.0.0/dist/css/nice-select2.css"
+    />
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script type="module" src="./js/controller/controller.js"></script>
   </head>
@@ -108,13 +112,49 @@
         <button class="btn btn--sort"><span>&plus;</span>Sort By</button>
       </div>
       <div class="side-bar">
-        <select>
-          <option disabled selected>Nothing</option>
-          <option value="1">Some option</option>
-          <option value="2">Another option</option>
-          <option value="3">A disabled option</option>
-          <option value="4">Potato</option>
+        <select class="wide select-menu" id="categories">
+          <option disabled selected>Categories</option>
+          <option value="1">New</option>
+          <option value="2">Clothes</option>
+          <option value="3">Shoes</option>
+          <option value="4">Accessories</option>
+          <option value="5">Bags</option>
         </select>
+        <select class="wide select-menu" id="color">
+          <option disabled selected>Color</option>
+          <option value="1">Black</option>
+          <option value="2">Red</option>
+          <option value="3">Blue</option>
+          <option value="4">Green</option>
+          <option value="5">Yellow</option>
+        </select>
+        <select class="wide select-menu" id="brands">
+          <option disabled selected>Sustainable Brands</option>
+          <option value="1">Gucci</option>
+          <option value="2">Armani</option>
+          <option value="3">Lacoste</option>
+          <option value="4">Channel</option>
+        </select>
+        <select class="wide select-menu" id="sustainablility">
+          <option disabled selected>Sustainablity</option>
+          <option value="1">Gucci</option>
+          <option value="2">Armani</option>
+          <option value="3">Lacoste</option>
+          <option value="4">Channel</option>
+        </select>
+        <select class="wide select-menu" id="price">
+          <option disabled selected>price</option>
+          <option value="1">$100.00</option>
+          <option value="2">$800.00</option>
+          <option value="3">$1200.00</option>
+          <option value="4">$900.00</option>
+        </select>
+      </div>
+      <div class="products-container">
+        <div class="swiper swiper--plp">
+          <div class="swiper-wrapper swiper-wrapper--plp"></div>
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
     </main>
     <footer class="footer">
@@ -186,5 +226,6 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./nice-select2-2.0.0/dist/js/nice-select2.js"></script>
   </body>
 </html>
