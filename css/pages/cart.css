@@ -1,0 +1,29 @@
+.title--cart{
+
+font-size: 32px;
+font-weight: 600;
+line-height: 38px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+.cart-nav{
+    width: 100%;
+   padding: 2rem 8rem; 
+}
+.item--cart{
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0.205em;
+    text-align: center;
+    text-transform: uppercase;
+}
+.list--cart{
+display: flex;
+justify-content: space-between;
+}
+.cart-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
