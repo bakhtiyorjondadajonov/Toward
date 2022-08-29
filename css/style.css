@@ -14,6 +14,7 @@
 @import "layout/sections/section-edition.css";
 @import "layout/sections/section-favourites.css";
 @import "layout/sections/section-blog.css";
+@import "layout/sections//section--pair-with.css";
 @import "layout/header.css";
 @import "layout/footer.css";
 @import "pages/home.css";

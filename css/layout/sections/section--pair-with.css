@@ -1,0 +1,64 @@
+.pair-with{
+display: flex;
+flex-direction: column;
+height: max-content;
+margin-top: 5rem;
+margin-bottom: 2rem;
+}
+.title--pair-with{
+    
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+    
+}
+.pair-with__carousel{
+height: 80vh;
+width: 100%;
+}
+.swiper--pair-with,.swiper--recommendation {
+    width: 100%;
+    height: 100%;
+  }
+
+  #swiper-slide--pair-width,#swiper-slide--recommendation{
+   height: 100% !important;
+   
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  #swiper-slide--pair-width .product-card--seasonal .product__img--seasonal{
+    height: 100% !important;
+  }
+  #swiper-slide--recommendation .product-card--seasonal .product__img--seasonal{
+    height: 100% !important;
+  }
+  @media (max-width:650px) {
+    .pair-with__carousel{
+        /* height: 70vh; */
+        height: max-content;
+    }
+    .title--pair-with{
+        
+font-size: 20px;
+font-weight: 600;
+line-height: 26px;
+letter-spacing: 0em;
+text-align: center;
+
+    }
+  }

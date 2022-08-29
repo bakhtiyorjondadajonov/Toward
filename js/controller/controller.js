@@ -113,3 +113,46 @@ const pdpSwiper = new Swiper(".swiper--pdp", {
     },
   },
 });
+
+const pairWithCarousel = new Swiper(".swiper--pair-with", {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 2,
+    },
+    650: {
+      slidesPerView: 3,
+    },
+    900: {
+      slidesPerView: 4,
+    },
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+const recommendationCarousel = new Swiper(".swiper--recommendation", {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 2,
+    },
+    650: {
+      slidesPerView: 3,
+    },
+    900: {
+      slidesPerView: 4,
+    },
+  },
+});
